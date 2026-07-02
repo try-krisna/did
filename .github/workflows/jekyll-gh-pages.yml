@@ -30,7 +30,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site
-          cp -R CNAME README.md .nojekyll .well-known 1 credentials _site/
+          cp -R CNAME README.md .nojekyll .well-known 1 credentials vc _site/
           rm -f _site/.well-known/didKeyPairs.json _site/1/didKeyPairs.json
 
       - name: Upload static site
