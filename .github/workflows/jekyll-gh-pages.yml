@@ -31,6 +31,7 @@ jobs:
         run: |
           mkdir -p _site
           cp -R CNAME README.md .nojekyll .well-known 1 credentials _site/
+          rm -f _site/.well-known/didKeyPairs.json _site/1/didKeyPairs.json
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
