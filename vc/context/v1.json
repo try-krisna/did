@@ -1,5 +1,5 @@
 {
   "@context": {
-    "@vocab": "https://krisna.site/vc/context/v1#"
+    "@vocab": "https://krisna.site/vc/context/v1.json#"
   }
 }
