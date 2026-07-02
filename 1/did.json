@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/bls12381-2020/v1",
+    "https://w3id.org/security/multikey/v1"
+  ],
+  "id": "did:web:krisna.site:1",
+  "verificationMethod": [
+    {
+      "id": "did:web:krisna.site:1#keys-1",
+      "type": "Bls12381G2Key2020",
+      "controller": "did:web:krisna.site:1",
+      "publicKeyBase58": "oRfEeWFresvhRtXCkihZbxyoi2JER7gHTJ5psXhHsdCoU1MttRMi3Yp9b9fpjmKh7bMgfWKLESiK2YovRd8KGzJsGuamoAXfqDDVhckxuc9nmsJ84skCSTijKeU4pfAcxeJ"
+    },
+    {
+      "id": "did:web:krisna.site:1#multikey-1",
+      "type": "Multikey",
+      "controller": "did:web:krisna.site:1",
+      "publicKeyMultibase": "zDnaemDNwi4G5eTzGfRooFFu5Kns3be6yfyVNtiaMhWkZbwtc"
+    },
+    {
+      "id": "did:web:krisna.site:1#multikey-2",
+      "type": "Multikey",
+      "controller": "did:web:krisna.site:1",
+      "publicKeyMultibase": "zUC7HnpncVAkTjtL6B8prX6bQM2WA5sJ7rXFeCqyrvPnrzoFBjYsVUTNwzhhPUazja73tWwPeEBWCUgq5qBSrtrXiYhVvBCgZPTCiWANj7TSiZJ6SnyC3pkt94GiuChhAvmRRbt"
+    }
+  ],
+  "authentication": [
+    "did:web:krisna.site:1#keys-1",
+    "did:web:krisna.site:1#multikey-1",
+    "did:web:krisna.site:1#multikey-2"
+  ],
+  "assertionMethod": [
+    "did:web:krisna.site:1#keys-1",
+    "did:web:krisna.site:1#multikey-1",
+    "did:web:krisna.site:1#multikey-2"
+  ],
+  "capabilityInvocation": [
+    "did:web:krisna.site:1#keys-1",
+    "did:web:krisna.site:1#multikey-1",
+    "did:web:krisna.site:1#multikey-2"
+  ],
+  "capabilityDelegation": [
+    "did:web:krisna.site:1#keys-1",
+    "did:web:krisna.site:1#multikey-1",
+    "did:web:krisna.site:1#multikey-2"
+  ]
+}
