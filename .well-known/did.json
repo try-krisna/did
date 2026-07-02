@@ -1,16 +1,8 @@
 {
+  "id": "did:web:krisna.site",
   "@context": [
     "https://www.w3.org/ns/did/v1",
-    "https://w3id.org/security/suites/bls12381-2020/v1"
-  ],
-  "id": "did:web:krisna.site",
-  "verificationMethod": [
-    {
-      "id": "did:web:krisna.site#keys-1",
-      "type": "Bls12381G2Key2020",
-      "controller": "did:web:krisna.site",
-      "publicKeyBase58": "oRfEeWFresvhRtXCkihZbxyoi2JER7gHTJ5psXhHsdCoU1MttRMi3Yp9b9fpjmKh7bMgfWKLESiK2YovRd8KGzJsGuamoAXfqDDVhckxuc9nmsJ84skCSTijKeU4pfAcxeJ"
-    }
+    "https://w3id.org/security/multikey/v1"
   ],
   "authentication": [
     "did:web:krisna.site#keys-1"
@@ -18,10 +10,18 @@
   "assertionMethod": [
     "did:web:krisna.site#keys-1"
   ],
-  "capabilityInvocation": [
-    "did:web:krisna.site#keys-1"
+  "verificationMethod": [
+    {
+      "id": "did:web:krisna.site#keys-1",
+      "type": "Multikey",
+      "controller": "did:web:krisna.site",
+      "publicKeyMultibase": "zDnaeWhSZpjo7mi3igBejgQgi9Z1BHUJoyY4Hu9pXz4W8hNx3"
+    }
   ],
   "capabilityDelegation": [
+    "did:web:krisna.site#keys-1"
+  ],
+  "capabilityInvocation": [
     "did:web:krisna.site#keys-1"
   ]
 }
